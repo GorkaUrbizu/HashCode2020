@@ -136,7 +136,7 @@ def eval_sol(inst, lib_books_chosen):
     return sum((np.sum(inst.book_scores[books]) for books in lib_books_chosen))
 
 if __name__ == "__main__":
-    """
+    
     inst = read_instance(open("a_example.txt"))
     sign_up = get_signups(inst)
     sign_up_order, books_chosen = get_scans(inst,sign_up)
@@ -173,7 +173,6 @@ if __name__ == "__main__":
     eval5 = eval_sol(inst, books_chosen)
     write_solution(sign_up_order, books_chosen, open("e_sol.txt","w+"))
     print(eval5)
-    """
 
     inst = read_instance(open("f_libraries_of_the_world.txt"))
     sign_up = get_signups(inst)
